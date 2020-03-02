@@ -33,7 +33,9 @@ int main() {
 
   // Load the list of stop words.
   ifstream f("../input.txt");
-  
+  string str;
+  while (getline(f, str)) {
+  }
 
   return 0;
 }

@@ -3,8 +3,8 @@
 
 * What is this?
 
-This is the repo containing my exercises according to the book /"Exercises in/
-/Programming Style"/.
+This is the repo containing my exercises according to the book 
+[[https://www.amazon.com/Exercises-Programming-Style-Cristina-Videira/dp/1482227371][Exercises in Programming Style]].
 
 Unlike the original book, mine are written in C++ and I might transfer to other
 programming languages if I see it useful.
