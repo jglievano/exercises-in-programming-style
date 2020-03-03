@@ -1,3 +1,6 @@
-cmake_minimum_required(VERSION 2.8.9)
+cmake_minimum_required(VERSION 3.16)
 project (tf-01)
+
+set(CMAKE_CXX_STANDARD 14)
+
 add_executable(tf-01 tf-01.cc)

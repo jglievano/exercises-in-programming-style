@@ -1,14 +1,16 @@
+#include<array>
 #include<fstream>
 #include<iostream>
 #include<string>
 #include<vector>
 
-using namespace std;
+const int WORD_MAX_SIZE = 10;
+const int LINE_MAX_SIZE = 80;
 
 int main() {
 
   // The constrained memory should have no more than 1024 cells
-  vector<char> *data = new vector<char>();
+  std::vector< std::array<char, WORD_MAX_SIZE> > data;
 
   /**
    *
@@ -32,9 +34,23 @@ int main() {
    */
 
   // Load the list of stop words.
-  ifstream f("../input.txt");
-  string str;
-  while (getline(f, str)) {
+  
+  std::ifstream f("../stop_words.txt");
+  std::string str;
+  for (std::array<char, WORD_MAX_SIZE> a; f.getline(&a[0], WORD_MAX_SIZE, ',');) {
+    data.push_back(a);
+  }
+
+  std::array<char, LINE_MAX_SIZE> line;
+  int startCharOfWord = 0;
+  int i = 0;
+  bool wordFound = false;
+  std::array<char, WORD_MAX_SIZE> word;
+  std::array<char, WORD_MAX_SIZE> wordNNNN;
+  int frequency = 0;
+
+  for (auto &a : data) {
+    std::cout << &a[0] << std::endl;
   }
 
   return 0;
