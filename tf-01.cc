@@ -7,8 +7,8 @@
 const int WORD_MAX_SIZE = 10;
 const int LINE_MAX_SIZE = 80;
 
-int main() {
 
+int main() {
   // The constrained memory should have no more than 1024 cells
   std::vector< std::array<char, WORD_MAX_SIZE> > data;
 
